@@ -29,13 +29,16 @@ function Landing() {
             <View style={styles.buttonsContainer}>
                 <RectButton 
                     style={[styles.button, styles.buttonPrimary]}
-                    onPress={handleNavigateToGiveClassesPage}
+                   
                 >
                     <Image source={studyIcon} />
                     <Text style={styles.buttonText}>Estudar</Text>
                 </RectButton>
 
-                <RectButton style={[styles.button, styles.buttonSecondary]}>
+                <RectButton 
+                    style={[styles.button, styles.buttonSecondary]}
+                    onPress={handleNavigateToGiveClassesPage}
+                >
                     <Image source={giveClassesIcon} />
                     <Text style={styles.buttonText}>Dar aulas</Text>
                 </RectButton>
